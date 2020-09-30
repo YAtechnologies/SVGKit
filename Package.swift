@@ -1,11 +1,11 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.3
 import PackageDescription
 
 let package = Package(
     name: "SVGKit",
     platforms: [
         .macOS(.v10_10),
-        .iOS(.v8),
+        .iOS(.v9),
         .tvOS(.v9)
     ],
     products: [
@@ -29,7 +29,9 @@ let package = Package(
             ],
             path: "Source",
             exclude: [
-                "SwiftUI additions"
+                "SwiftUI additions",
+                "Info.plist",
+                "include/README.md"
             ]
         ),
         .target(
