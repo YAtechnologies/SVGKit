@@ -9,6 +9,8 @@
 #ifndef StyleTouch_SVGStyelCatcher_h
 #define StyleTouch_SVGStyelCatcher_h
 
+#import <UIKit/UIKit.h>
+
 @class SVGElement;
 
 @protocol SVGStyleCatcher <NSObject>
